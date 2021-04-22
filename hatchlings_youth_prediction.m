@@ -1,22 +1,22 @@
 years = input('How many years you want to project in future? ');
 
-%While loop to check for Input validation
+% While loop to check for Input validation
 while~(isnumeric(years) && isscalar(years) && years > 0)
     disp('Invalid Input!! Enter again...');
     years = input('How many years you want to project in future?');
 end
 
-%Creation of three zero row vectors based on loggerhead turtle's life stages
+% Creation of three zero row vectors based on loggerhead turtle's life stages
 hatchling = zeros(1, years+1);
 youth = zeros(1,years+1);
 adult = zeros(1, years+1);
 
-%Initialize the defined row vectors with initial values
+% Initialize the defined row vectors with initial values
 hatchling(1) = 1445570;
 youth (1) = 5536790;
 adult(1) = 17640;
 
-%For loop to predict calculate the future projection of each stage upto the
+% For loop to predict calculate the future projection of each stage upto the
 %number of years entered by the user
 for i = 1:years
     hatchling(i+1) = (77.4*adult(i));
@@ -24,5 +24,5 @@ for i = 1:years
     adult(i+1) = (0.000434*youth(i)) + (0.809*adult(i));
 end
 
-%plotting the predicted evolution of each stages on single axis
+% plotting the predicted evolution of each stages on single axis
 plot(0:years, hatchling, 0:years, youth,'--', 0:years, adult,':')
