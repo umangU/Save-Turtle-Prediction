@@ -1,3 +1,4 @@
+% User Input
 years = input('How many years you want to project in future? ');
 
 % While loop to check for Input validation
