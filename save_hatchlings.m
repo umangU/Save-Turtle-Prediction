@@ -1,4 +1,4 @@
-%  Years taken into consideration for the projection
+% Years taken into consideration for the projection
 years = 50;
 
 % Creation of three zero row vectors based on loggerhead turtle's life stages
@@ -6,7 +6,7 @@ hatchling = zeros(1, years+1);
 youth = zeros(1,years+1);
 adult = zeros(1, years+1);
 
-%Initialize the defined row vectors with initial values
+% Initialize the defined row vectors with initial values
 hatchling(1) = 1445570;
 youth (1) = 5536790;
 adult(1) = 17640;
