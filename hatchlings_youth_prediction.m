@@ -1,7 +1,7 @@
 %User Input
 years = input('How many years you want to project in future? ');
 
-% While loop to check for Input validation
+%While loop to check for Input validation
 while~(isnumeric(years) && isscalar(years) && years > 0)
     disp('Invalid Input!! Enter again...');
     years = input('How many years you want to project in future?');
