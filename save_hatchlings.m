@@ -1,7 +1,7 @@
 %Years taken into consideration for the projection
 years = 50;
 
-%Creation of three zero row vectors based on loggerhead turtle's life stages
+% Creation of three zero row vectors based on loggerhead turtle's life stages
 hatchling = zeros(1, years+1);
 youth = zeros(1,years+1);
 adult = zeros(1, years+1);
@@ -11,7 +11,7 @@ hatchling(1) = 1445570;
 youth (1) = 5536790;
 adult(1) = 17640;
 
-%For loop to predict calculate the future projection of each stage upto the
+% For loop to predict calculate the future projection of each stage upto the
 %Number of years entered by the user
 for i = 1:years
     hatchling(i+1) = (77.4*adult(i));
