@@ -25,5 +25,5 @@ for i = 1:years
     adult(i+1) = (0.000434*youth(i)) + (0.809*adult(i));
 end
 
-%Plotting the predicted evolution of each stages on single axis
+% Plotting the predicted evolution of each stages on single axis
 plot(0:years, hatchling, 0:years, youth,'--', 0:years, adult,':')
