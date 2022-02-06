@@ -7,7 +7,7 @@ while~(isnumeric(years) && isscalar(years) && years > 0)
     years = input('How many years you want to project in future?');
 end
 
-%Creation of three zero row vectors based on loggerhead turtle's life stages
+% Creation of three zero row vectors based on loggerhead turtle's life stages
 hatchling = zeros(1, years+1);
 youth = zeros(1,years+1);
 adult = zeros(1, years+1);
